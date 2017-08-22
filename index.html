@@ -1,0 +1,16 @@
+<html>
+<head>
+	<meta charset='UTF-8' />
+	<title>JS new performance benchmark</title>
+	<script type="text/javascript" src="bench.js"></script>
+	<script type="text/javascript" src="proto.js"></script>
+	<script type="text/javascript" src="closure.js"></script>
+	<script type="text/javascript" src="create.js"></script>
+</head>
+<body>
+	<button onclick="window.BENCH.proto.start(1000000)">Proto</button>
+	<button onclick="window.BENCH.closure.start(1000000)">Closure</button>
+	<button onclick="window.BENCH.create.start(1000000)">Object.create</button>
+	<div id='target-div'>Target</div>
+</body>
+</html>
